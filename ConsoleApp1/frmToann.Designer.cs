@@ -166,7 +166,7 @@ namespace BasicWinForm
             this.Controls.Add(this.label1);
             this.Name = "frmMain";
             this.Text = "Phép Tính Cơ Bản";
-            this.Load += new System.EventHandler(this.frmMain_Load);
+            //this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

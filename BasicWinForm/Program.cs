@@ -16,7 +16,7 @@ namespace BasicWinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFire());
+            Application.Run(new FrmUser());
         }
     }
 }

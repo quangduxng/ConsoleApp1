@@ -13,7 +13,7 @@ namespace BasicWinForm
 {
     public partial class frmFire : Form
     {
-        SoundManager sound = new SoundManager("C:\\Users\\dung0\\OneDrive\\Máy tính\\Hoc.Net\\ConsoleApp1\\BasicWinForm\\Sound\\Phaohoa.mp3");
+        SoundManager sound = new SoundManager("D:\\C#\\BasicWinForm\\Sound\\Phaohoa.mp3");
         public frmFire()
         {
             InitializeComponent();

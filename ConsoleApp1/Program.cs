@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ConsoleApp1.MyLib;
+
 namespace ConsoleApp1
 {
     class Program
@@ -11,7 +13,7 @@ namespace ConsoleApp1
         {
             float x = 0;
             var rs = MyLib.PTBacNhat(20, 10, out x);
-            if (rs = KetQua.VoSoNghiem)
+            if (rs=KetQua.VoSoNghiem)
                 Console.WriteLine(" PT VÔ SỐ NGhiệm");
            else  if (rs = KetQua.VoNghiem)
                 Console.WriteLine(" PT VÔ NGhiệm");

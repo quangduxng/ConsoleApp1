@@ -54,6 +54,12 @@
     <Compile Include="Entities\Love.cs" />
     <Compile Include="Entities\Person.cs" />
     <Compile Include="Entities\SoundManager.cs" />
+    <Compile Include="frm2510.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm2510.Designer.cs">
+      <DependentUpon>frm2510.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm2510.resx">
+      <DependentUpon>frm2510.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFire.resx">
       <DependentUpon>frmFire.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons\add.png" />
+    <None Include="Icons\bg.gif" />
     <Content Include="Icons\delete.png" />
     <Content Include="Icons\edit.png" />
     <Content Include="Icons\nammoi.gif" />
@@ -123,6 +134,17 @@
     <Content Include="Icons\phaohoa2.gif" />
     <Content Include="Sound\HNY.mp3" />
     <Content Include="Sound\Phaohoa.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

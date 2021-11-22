@@ -33,15 +33,16 @@ namespace ConsoleApp1
             return rs;
 
         }
-        public static long TongNversion2(int n)
+        public static long TongNversion2(long n)
         {
             long rs = 0;
-
-            while (int i <= n)
+            int i = 0;
+            while (i <= n)
         {
                 rs += (long)i;
                 i++;
             }
+            return rs;
         }
         public static long TongNdeQuy(int n)
         {
@@ -100,10 +101,7 @@ namespace ConsoleApp1
             double d = Math.Sqrt(Math.Pow(x - p.x, 2) + Math.Pow(y - p.y ,   2));
             return d;
         }
-        public static double Distance()
-        {
-
-        }
+       
     }
 
 
